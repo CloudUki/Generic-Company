@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "raisindessables";
+  src: url("../fonts/raisindessables.ttf") format("truetype");
+}
+body {
+  margin: 0;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  background-color: rgba(46, 28, 11, 0.7);
+  width: 1440px;
+  height: 64px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#first-panel {
+  width: 1440px;
+  height: 1024px;
+  background-image: url("../assets/header_bkg.png");
+  background-repeat: no-repeat;
+}
+#first-panel #first-panel-txt {
+  position: absolute;
+  width: 760px;
+  margin: 0;
+  text-align: center;
+  color: white;
+  top: 360px;
+  left: 340px;
+}
+#first-panel #first-panel-txt h1 {
+  position: absolute;
+  top: 70px;
+  font-family: "raisindessables";
+  font-size: 6rem;
+  font-weight: 100;
+}
+#first-panel #first-panel-txt hr {
+  position: absolute;
+  top: 230px;
+  left: 255px;
+  background-color: #DFEFCE;
+  border: none;
+  width: 246px;
+  height: 2px;
+  opacity: 10;
+}
+#first-panel #first-panel-txt .first-panel-subtext {
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  width: 554px;
+  height: 19px;
+  font-family: "Helvetica";
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: normal;
+}
+#first-panel #down-arrow {
+  position: absolute;
+  top: 841px;
+  left: 680px;
+}
+
+#second-panel {
+  width: 1440px;
+  height: 700px;
+  background-color: #FBECE1;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+#second-panel #second-panel-starter {
+  position: absolute;
+  left: 295px;
+  top: 1050px;
+  z-index: 550;
+  color: white;
+  font-family: "Dolce Vita";
+  font-size: 30px;
+  text-align: center;
+}
+#second-panel .header-bar {
+  position: absolute;
+  top: 1240px;
+  left: 252px;
+  background-color: #DFEFCE;
+  border: none;
+  width: 246px;
+  height: 2px;
+  opacity: 10;
+  z-index: 160;
+}
+#second-panel .second-header {
+  position: absolute;
+  top: 1355px;
+  left: 50px;
+  width: 300px;
+  height: 19px;
+  color: #DFEFCE;
+  font-family: "Dolce Vita Heavy";
+  font-size: 27px;
+  font-weight: 300;
+  line-height: normal;
+  z-index: 320;
+}
+#second-panel #second-pg {
+  position: absolute;
+  top: 1415px;
+  left: 50px;
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: white;
+  padding: 0;
+  margin: 0;
+  z-index: 320;
+}
+#second-panel #third-pg {
+  position: absolute;
+  top: 1515px;
+  left: 50px;
+  font-size: 14.5px;
+  font-family: "Helvetica";
+  color: white;
+  line-height: 1.4;
+  padding: 0;
+  margin: 0;
+  z-index: 320;
+}
+#second-panel #second-panel-pfp {
+  position: absolute;
+  top: 1250px;
+  right: 550px;
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  z-index: 320;
+  margin: 0;
+  padding: 0;
+}
+#second-panel #second-right-header {
+  position: absolute;
+  top: 1365px;
+  right: 357px;
+  width: 300px;
+  height: 19px;
+  color: black;
+  font-family: "Dolce Vita Heavy";
+  font-size: 27px;
+  font-weight: 300;
+  line-height: normal;
+  z-index: 320;
+}
+#second-panel #second-right-bar {
+  position: absolute;
+  top: 1465px;
+  right: 506px;
+  background-color: black;
+  border: none;
+  width: 150px;
+  height: 2px;
+  opacity: 10;
+  z-index: 320;
+}
+#second-panel #second-right-pg {
+  position: absolute;
+  top: 1500px;
+  right: 107px;
+  font-size: 16px;
+  font-family: "Helvetica";
+  color: black;
+  padding: 0;
+  margin: 0;
+  z-index: 320;
+}
+#second-panel #second-panel-btn {
+  position: absolute;
+  top: 1700px;
+  left: 50px;
+  width: 300px;
+  height: 60px;
+  background-color: transparent;
+  border: 2px solid #DFEFCE;
+  color: #DFEFCE;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Helvetica";
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 320;
+}
+#second-panel #second-panel-btn:hover {
+  background-color: white;
+  color: black;
+  border-color: white;
+}
+#second-panel #second-panel-img {
+  position: absolute;
+  top: 980px;
+  left: 30px;
+  width: 680px;
+  height: 537px;
+  z-index: 100;
+}
+#second-panel .box {
+  width: 680px;
+  height: 450px;
+  background: linear-gradient(to bottom, rgba(46, 28, 11, 0.6) 30%, #2E1C0B 30%);
+  position: absolute;
+  top: 1355px;
+  left: 708px;
+  transform: translateX(-99.7%);
+  z-index: 300;
+}
+
+/*# sourceMappingURL=styles.css.map */
