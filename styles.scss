@@ -1,0 +1,254 @@
+//Variables
+$bar-color: #DFEFCE;
+$secondary-font: 'Helvetica';
+$third-font: 'Dolce Vita';
+$fourth-text: 'Dolce Vita Heavy';
+
+@font-face {
+    font-family: "raisindessables";
+    src: url("../fonts/raisindessables.ttf") format("truetype");
+}
+
+body{
+    margin: 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    background-color: rgba(46, 28, 11, 0.70);
+    width: 1440px;
+    height: 64px;
+    text-align: center;
+    padding-top: 30px; 
+}
+
+#first-panel {
+    width: 1440px;
+    height: 1024px;
+    background-image: url("../assets/header_bkg.png");
+    background-repeat: no-repeat;
+
+    #first-panel-txt {
+        position: absolute;
+        width: 760px;
+        margin: 0;
+        text-align: center;
+        color: white;
+        top: 360px;
+        left: 340px;
+
+        h1 {
+            position: absolute;
+            top: 70px;
+            font-family: "raisindessables";
+            font-size: 6rem;
+            font-weight: 100;
+        }
+
+        hr {
+            position: absolute;
+            top: 230px;
+            left: 255px;
+            background-color: $bar-color;
+            border: none;
+            width: 246px;
+            height: 2px;
+            opacity: 10; // Adjust the opacity value as needed
+        }
+
+        .first-panel-subtext {
+            position: absolute;
+            top: 250px;
+            left: 100px;
+            width: 554px;
+            height: 19px;
+            font-family: $secondary-font;
+            font-size: 16px;
+            font-weight: 300;
+            margin-top: 20px;
+            line-height: normal;
+        }
+    }
+
+    #down-arrow {
+        position: absolute;
+        top: 841px;
+        left: 680px;
+    }
+}
+
+#second-panel {
+    width: 1440px;
+    height: 700px;
+    background-color: #FBECE1;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+
+    #second-panel-starter {
+        position: absolute;
+        left: 295px;
+        top: 1050px;
+        z-index: 550;
+        color: white;
+        font-family: $third-font;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .header-bar {
+        position: absolute;
+        top: 1200px;
+        left: 235px;
+        background-color: $bar-color;
+        border: none;
+        width: 246px;
+        height: 2px;
+        opacity: 10;
+        z-index: 160;
+    }
+
+    .second-header {
+        position: absolute;
+        top: 1355px;
+        left: 50px;
+        width: 300px;
+        height: 19px;
+        color: $bar-color;
+        font-family: $fourth-text;
+        font-size: 27px;
+        font-weight: 300;
+        line-height: normal;
+        z-index: 320;
+    }
+
+    #second-pg {
+        position: absolute;
+        top: 1415px;
+        left: 50px;
+        font-size: 16px;
+        font-family: $secondary-font;
+        color: white;
+        padding: 0;
+        margin: 0;
+        z-index: 320;
+    }
+
+    #third-pg {
+        position: absolute;
+        top: 1515px;
+        left: 50px;
+        font-size: 14.5px;
+        font-family: $secondary-font;
+        color: white;
+        line-height: 1.4;
+        padding: 0;
+        margin: 0;
+        z-index: 320;
+    }
+
+    #second-panel-pfp {
+        position: absolute;
+        top: 1250px;
+        right: 550px;
+        width: 106px;
+        height: 106px;
+        border-radius: 50%;
+        z-index: 320;
+        margin: 0;
+        padding: 0;
+    }
+
+    #second-right-header {
+        position: absolute;
+        top: 1365px;
+        right: 357px;
+        width: 300px;
+        height: 19px;
+        color: black;
+        font-family: $fourth-text;
+        font-size: 27px;
+        font-weight: 300;
+        line-height: normal;
+        z-index: 320;
+    }
+
+    #second-right-bar {
+        position: absolute;
+        top: 1465px;
+        right: 506px;
+        background-color: black;
+        border: none;
+        width: 150px;
+        height: 2px;
+        opacity: 10;
+        z-index: 320;
+    }
+
+    #second-right-pg {
+        position: absolute;
+        top: 1500px;
+        right: 107px;
+        font-size: 16px;
+        font-family: $secondary-font;
+        color: black;
+        padding: 0;
+        margin: 0;
+        z-index: 320;
+    }
+
+    #second-panel-btn {
+        position: absolute;
+        top: 1700px;
+        left: 50px;
+        width: 300px;
+        height: 60px;
+        background-color: transparent;
+        border: 2px solid $bar-color;
+        color: $bar-color;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: $secondary-font;
+        cursor: pointer;
+        transition: all .3s ease;
+        z-index: 320;
+    }
+
+    #second-panel-btn:hover {
+        background-color: white;
+        color: black;
+        border-color: white;
+    }
+
+
+    #second-panel-img {
+        position: absolute;
+        top: 980px;
+        left: 30px;
+        width: 680px;
+        height: 537px;
+        z-index: 100;
+    }
+
+    .box {
+        width: 680px;
+        height: 450px;
+        background: linear-gradient(to bottom, rgba(46, 28, 11, 0.9) 30%, #2E1C0B 30%);
+        position: absolute;
+        top: 1355px;
+        left: 708px;
+        transform: translateX(-99.7%);
+        z-index: 300;
+      }
+      
+}
+
+#third-panel {
+    width: 1440px;
+    height: 1024px;
+    background-image: url("../assets/third-panel-bkg.jpg");
+    background-repeat: no-repeat;
+}
+
