@@ -1,5 +1,6 @@
 //Variables
 $bar-color: #DFEFCE;
+$first-font: 'Raisindessables';
 $secondary-font: 'Helvetica';
 $third-font: 'Dolce Vita';
 $fourth-text: 'Dolce Vita Heavy';
@@ -23,6 +24,15 @@ header {
     padding-top: 30px; 
 }
 
+footer {
+    width: 1440px;
+    height: 247px;
+    background-color: #2E1C0B;
+    opacity: 0.9;
+    padding: 0;
+    margin: 0;
+}
+
 #first-panel {
     width: 1440px;
     height: 1024px;
@@ -41,7 +51,7 @@ header {
         h1 {
             position: absolute;
             top: 70px;
-            font-family: "raisindessables";
+            font-family: $first-font;
             font-size: 6rem;
             font-weight: 100;
         }
@@ -250,5 +260,346 @@ header {
     height: 1024px;
     background-image: url("../assets/third-panel-bkg.jpg");
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    .third-logo {
+        position: absolute;
+        top: 175px;
+        left: 660px;
+        z-index: 550;
+        color: white;
+        font-family: $first-font;
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 100;
+    }
+
+    #third-panel-header {
+        position: absolute;
+        top: 220px;
+        left: 410px;
+        z-index: 550;
+        color: white;
+        font-family: $first-font;
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: 100;
+    }
+    
+    .third-bar {
+        position: absolute;
+        top: 400px;
+        left: 589px;
+        background-color: $bar-color;
+        border: none;
+        width: 246px;
+        height: 2px;
+        opacity: 10; // Adjust the opacity value as needed
+    }
+
+    .third-panel-txt {
+        position: absolute;
+        top: 430px;
+        left: 410px;
+        z-index: 550;
+        color: white;
+        font-family: $secondary-font;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+        line-height: 1.4;
+    }
+
+    .photo-row{
+        position: absolute;
+        top: 200px;
+        left: -370px;
+        display: flex;
+        gap: 40px;
+        margin: 0;
+        padding: 0;
+
+        img {
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+#fourth-panel {
+    position: relative;
+    width: 1440px;
+    height: 700px;
+    background-color: #FBECE1;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+
+    #fourth-panel-pf {
+        position: absolute;
+        top: 180px;
+        left: 40px;
+        width: 106px;
+        height: 106px;
+        border-radius: 50%;
+    }
+
+    #fourth-panel-txt {
+        position: absolute;
+        top: 290px;
+        left: 40px;
+        font-family: $fourth-text;
+        padding: 0;
+        margin: 0;
+    }
+
+    .fourth-bar {
+        position: absolute;
+        top: 380px;
+        left: 40px;
+        background-color: black;
+        border: none;
+        width: 150px;
+        height: 2px;
+        opacity: 10; // Adjust the opacity value as needed
+    }
+
+    .fourth-panel-para {
+        position: absolute;
+        top: 400px;
+        left: 40px;
+        font-size: 16px;
+        font-family: $secondary-font;
+        color: black;
+        padding: 0;
+        margin: 0;
+    }
+
+    .planning-header {
+        position: absolute;
+        top: 35px;
+        right: 160px;
+        width: 300px;
+        height: 19px;
+        color: black;
+        font-family: $fourth-text;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: normal;
+        z-index: 12;
+    }
+
+    .planning-bar {
+        position: absolute;
+        top: 160px;
+        right: 274px;
+        background-color: black;
+        border: none;
+        width: 200px;
+        height: 2.5px;
+        opacity: 10; // Adjust the opacity value as needed
+        z-index: 12;
+    }
+
+    .planning-img {
+        position: absolute;
+        top: -40px;
+        right: 30px;
+        width: auto;
+        height: auto;
+        z-index: 10;
+    }
+
+    .planning-bkg {
+        position: absolute;
+        top: -40px;
+        right: 30px;
+        width: auto;
+        height: auto;
+    }
+
+    .box-over{
+        width: 680px;
+        height: 450px;
+        background: rgba(46, 28, 11, 0.9);
+        position: absolute;
+        top: 303px;
+        right: 30px;
+        z-index: 12;
+    }
+
+    .planning-header-two {
+        position: absolute;
+        top: 300px;
+        right: 385px;
+        width: 300px;
+        height: 19px;
+        color: white;
+        font-family: $fourth-text;
+        font-size: 25px;
+        font-weight: 300;
+        line-height: normal;
+        z-index: 15;
+    }
+
+    .planning-header-pg {
+        position: absolute;
+        top: 360px;
+        right: 155px;
+        font-size: 16px;
+        font-family: $secondary-font;
+        color: white;
+        line-height: 1.2;
+        padding: 0;
+        margin: 0;
+        z-index: 15;
+    }
+
+    .planning-pg {
+        position: absolute;
+        top: 450px;
+        right: 40px;
+        font-size: 14.5px;
+        font-family: $secondary-font;
+        color: white;
+        line-height: 1.6;
+        padding: 0;
+        margin: 0;
+        z-index: 15;
+    }
+
+    #fourth-panel-btn {
+        position: absolute;
+        top: 650px;
+        right: 385px;
+        width: 300px;
+        height: 60px;
+        background-color: transparent;
+        border: 2px solid $bar-color;
+        color: $bar-color;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-family: $secondary-font;
+        cursor: pointer;
+        transition: all .3s ease;
+        z-index: 15;
+
+        &:hover {
+            background-color: white;
+            color: black;
+            border-color: white;
+        }
+    }
+
+}
+
+#fifth-panel {
+    width: 1440px;
+    height: 600px;
+    background-image: url("assets/vanilla_ice.svg");
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0;
+    margin: 0;
+
+    #fifth-title {
+        position: absolute;
+        top: 80px;
+        left: 570px;
+        z-index: 550;
+        color: white;
+        font-family: $first-font;
+        text-align: center;
+        font-size: 5.5rem;
+        font-weight: 100;
+    }
+
+    .fifth-bar {
+        position: absolute;
+        top: 340px;
+        left: 589px;
+        background-color: $bar-color;
+        border: none;
+        width: 246px;
+        height: 2.5px;
+        opacity: 10; // Adjust the opacity value as needed
+    }
+
+    .icon-row {
+        position: absolute;
+        top: 400px;
+        left: 595px;
+        display: flex;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+
+        img {
+            width: auto;
+            height: auto;
+        }
+    }
+
+
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 20px;
+        width: auto; // Adjust size as needed
+        height: auto;
+    }
+
+    .footer-left {
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        width: 1000px;
+        height: 19px;
+        color: #ccc;
+        font-family: $secondary-font;
+        font-size: 11px;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .footer-middle {
+        position: absolute;
+        top: 100px;
+        right: 400px;
+        width: 400px;
+        height: 19px;
+        color: #ccc;
+        font-family: $secondary-font;
+        font-size: 11px;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    .footer-right {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 400px;
+        height: 19px;
+        color: #ccc;
+        font-family: $secondary-font;
+        font-size: 11px;
+        font-weight: 300;
+        line-height: normal;
+    }
 }
 
